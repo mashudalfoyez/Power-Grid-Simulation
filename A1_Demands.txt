@@ -1,0 +1,6 @@
+Detroit 1000
+Dearborn 800
+AnnArbor 700
+Ypsilanti 400
+Livonia 300
+Canton 200

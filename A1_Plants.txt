@@ -1,0 +1,7 @@
+TexasSun Solar 500 150
+CoastalWind Wind 690 200
+FermiNuc Nuclear 2200 1000
+HydroDam Hydro 1500 800
+HotSprings Geotherm 480 120
+CoalPwr Coal 1100 600
+NG-Volt NatGas 1320 400

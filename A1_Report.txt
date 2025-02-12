@@ -1,0 +1,66 @@
+		--- Initial Plant Summary ---
+  Plant         Type       Voltage   Max Cap  Availabe
+---------     --------     -------   -------  --------
+TexasSun      Solar          500kv     150mw     150mw
+CoastalWind   Wind           690kv     200mw     200mw
+FermiNuc      Nuclear       2200kv    1000mw    1000mw
+HydroDam      Hydro         1500kv     800mw     800mw
+HotSprings    Geotherm       480kv     120mw     120mw
+CoalPwr       Coal          1100kv     600mw     600mw
+NG-Volt       NatGas        1320kv     400mw     400mw
+
+
+	--- Initial Demand Summary ---
+ Location      Demand     Supplied     Status
+----------    --------    --------    --------
+Detroit           1000           0     Not Met
+Dearborn           800           0     Not Met
+AnnArbor           700           0     Not Met
+Ypsilanti          400           0     Not Met
+Livonia            300           0     Not Met
+Canton             200           0     Not Met
+
+
+	--- Initial Transmission Line Summary ---
+Line ID | Capacity | Efficiency
+--------  ---------  ---------
+Line1           50        0.95
+Line2           60        0.93
+Line3           75        0.92
+Line4          100         0.9
+Line5          150        0.88
+Line6          200        0.85
+
+	--- Allocating power to the demand locations ---
+Allocating: 142.50 for Detroit Using: 150.00 From TexasSun On Line1
+Allocating: 190.00 for Detroit Using: 200.00 From CoastalWind On Line1
+Allocating: 667.50 for Detroit Using: 702.63 From FermiNuc On Line1
+Allocating: 282.50 for Dearborn Using: 297.37 From FermiNuc On Line1
+Allocating: 517.50 for Dearborn Using: 544.74 From HydroDam On Line1
+Allocating: 242.50 for AnnArbor Using: 255.26 From HydroDam On Line1
+Allocating: 114.00 for AnnArbor Using: 120.00 From HotSprings On Line1
+Allocating: 343.50 for AnnArbor Using: 361.58 From CoalPwr On Line1
+Allocating: 226.50 for Ypsilanti Using: 238.42 From CoalPwr On Line1
+Allocating: 173.50 for Ypsilanti Using: 182.63 From NG-Volt On Line1
+Allocating: 206.50 for Livonia Using: 217.37 From NG-Volt On Line1
+
+
+	Rich's Amazing Energy Grid
+	 Grid Simulation Report
+Location   | Required(MW) | Supplied(MW) | Status
+------------------------------------------------
+Detroit    |      1000.00 |      1000.00 | Met       
+Dearborn   |       800.00 |       800.00 | Met       
+AnnArbor   |       700.00 |       700.00 | Met       
+Ypsilanti  |       400.00 |       400.00 | Met       
+Livonia    |       300.00 |       206.50 | Partially Met
+Canton     |       200.00 |         0.00 | Not Met   
+
+
+Overall Grid Performance:
+    Total Demand Request:  3400.00 MW
+    Total Demand supplied: 3106.50 MW
+    Percent of demand met: 0.91%
+
+    Plant Capacity used:   3270.00 MW
+    Efficiency percentage: 0.95
